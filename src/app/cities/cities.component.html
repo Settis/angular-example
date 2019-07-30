@@ -1,0 +1,14 @@
+<input placeholder="Search" [(ngModel)]="findQuery" (ngModelChange)="this.findQueryUpdate.next($event)">
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Population</th>
+    <th>Country</th>
+  </tr>
+  <tr *ngFor="let city of (cities | async ).geonames">
+    <td>{{city.name}}</td>
+    <td>{{city.population}}</td>
+    <td>{{city.countryName}}</td>
+  </tr>
+</table>

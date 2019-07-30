@@ -1,0 +1,18 @@
+.container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    float: none;
+    width: auto;
+    background: #aafed6;
+}
+
+.left {
+    float: left; /* not needed, just for clarification */
+    background: #c0fe96;
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: 380px;
+    /*overflow: hidden;*/
+}
