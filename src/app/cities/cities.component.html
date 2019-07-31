@@ -6,7 +6,7 @@
     <th>Population</th>
     <th>Country</th>
   </tr>
-  <tr *ngFor="let city of (cities | async ).geonames">
+  <tr *ngFor="let city of (citiesResult | async ).geonames" (click)="clickOnCity(city)">
     <td>{{city.name}}</td>
     <td>{{city.population}}</td>
     <td>{{city.countryName}}</td>

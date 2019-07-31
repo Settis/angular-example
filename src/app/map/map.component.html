@@ -1,1 +1,5 @@
-<p>map works!</p>
+<agm-map [latitude]="mapNavigation.lat" [longitude]="mapNavigation.lng" [zoom]="2">
+  <agm-marker *ngFor="let city of cities" [latitude]='city.lat' [longitude]="city.lng">
+    <agm-info-window>{{city.name}}, {{city.countryName}}</agm-info-window>
+  </agm-marker>
+</agm-map>

@@ -6,7 +6,7 @@ type GeoNamesResult = {
 type GeoName = {
   name: string,
   population: number,
-  lng: string,
-  lat: string,
+  lng: number,
+  lat: number,
   countryName: string
 }
