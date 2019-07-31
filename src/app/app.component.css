@@ -11,7 +11,7 @@
 
 .left {
   float: left; /* not needed, just for clarification */
-  background: #c0fe96;
+  background: #e0e0e2;
   /* the next props are meant to keep this block independent from the other floated one */
   width: 380px;
   /*overflow: hidden;*/
