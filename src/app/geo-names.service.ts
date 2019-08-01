@@ -13,7 +13,7 @@ export class GeoNamesService {
   }
 
   private makeUrl(name: string): string {
-    return `http://api.geonames.org/searchJSON?q=${name}&username=strannik&featureClass=P&maxRows=25`;
+    return `https://secure.geonames.org/searchJSON?q=${name}&username=strannik&featureClass=P&maxRows=25`;
   }
 
 }
