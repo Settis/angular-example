@@ -34,9 +34,9 @@ export class CitiesComponent implements OnInit {
 
   public clickOnCity(city: GeoName): void {
     const mapNavigation: MapNavigation = {
-      lat: city.lat,
-      lng: city.lng,
-      zoom: 5
+      lat: Number(city.lat),
+      lng: Number(city.lng),
+      zoom: 7
     };
     this.mapNavigationChangedNotify.emit(mapNavigation);
   }
